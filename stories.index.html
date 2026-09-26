@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stories | Alpine Ascents</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Stories CSS -->
+    <link rel="stylesheet" href="stories.style.css">
+
+    <link rel="stylesheet" href="interactions.css">
+    <script src="interactions.js" defer></script>
+    <script src="story-modal.js" defer></script>
+    <script src="shared-footer.js" defer></script>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark main-nav">
+
+    <div class="container">
+
+        <a class="navbar-brand logo" href="index.html">
+
+            <i class="bi bi-mountains"></i>
+
+            <span>
+                <b>Alpine</b>
+                <small>ASCENTS</small>
+            </span>
+
+        </a>
+
+        <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.index.html">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="techniques.index.html">
+                        Techniques
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="records.index.html">
+                        Records
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="sheltering.index.html">
+                        Sheltering
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="organizations.index.html">
+                        Organizations
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="stories.index.html">
+                        Stories
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.index.html">
+                        Gallery
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="updates.index.html">
+                        Updates
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="guidelines.index.html">
+                        Guidelines
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.index.html">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="visitors">
+                <i class="bi bi-people"></i>
+                Visitors: 12,458
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="stories-hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <span>ADVENTURES & EXPERIENCES</span>
+
+        <h1>
+            Mountain <b>Stories</b>
+        </h1>
+
+        <p>
+            Discover inspiring journeys, unforgettable adventures
+            and stories from people who found their way into the mountains.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="stories-intro">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+
+            <div class="col-lg-6">
+
+                <div class="intro-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80"
+                        alt="Mountain Story">
+
+                    <div class="image-badge">
+
+                        <i class="bi bi-book"></i>
+
+                        <span>
+                            Stories Worth Sharing
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-lg-6">
+
+                <span class="section-tag">
+                    OUR JOURNEYS
+                </span>
+
+                <h2>
+                    Every Mountain Has A
+                    <b>Story</b>
+                </h2>
+
+                <p>
+                    Mountains are more than peaks and trails.
+                    They are places where challenges become
+                    experiences and experiences become memories.
+                </p>
+
+                <p>
+                    Explore stories of adventure, determination,
+                    discovery and the unforgettable moments that
+                    happen along the way.
+                </p>
+
+
+                <div class="story-points">
+
+                    <div>
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        <span>
+                            Inspiring mountain journeys
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        <span>
+                            Real experiences and adventures
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="bi bi-check-circle-fill"></i>
+
+                        <span>
+                            Lessons learned from the mountains
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= STORIES ================= -->
+
+<section class="stories-section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span>FEATURED JOURNEYS</span>
+
+            <h2>
+                Stories From The
+                <b>Mountains</b>
+            </h2>
+
+            <p>
+                Read inspiring stories that capture the spirit
+                of exploration, adventure and mountain life.
+            </p>
+
+        </div>
+
+
+
+        <div class="row g-4">
+
+
+            <!-- STORY 1 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="story-card">
+
+                    <div class="story-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=900&q=80"
+                            alt="Climbing Journey">
+
+                        <span class="story-label">
+                            ADVENTURE
+                        </span>
+
+                    </div>
+
+
+                    <div class="story-content">
+
+                        <span class="story-category">
+                            CLIMBING JOURNEY
+                        </span>
+
+                        <h3>
+                            Beyond The Summit
+                        </h3>
+
+                        <p>
+                            A journey through challenging trails,
+                            breathtaking landscapes and moments
+                            that made every step worthwhile.
+                        </p>
+
+                        <a href="#" class="read-story">
+                            Read Story
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- STORY 2 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="story-card">
+
+                    <div class="story-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=900&q=80"
+                            alt="Mountain Adventure">
+
+                        <span class="story-label">
+                            EXPEDITION
+                        </span>
+
+                    </div>
+
+
+                    <div class="story-content">
+
+                        <span class="story-category">
+                            MOUNTAIN JOURNEY
+                        </span>
+
+                        <h3>
+                            A Journey To Remember
+                        </h3>
+
+                        <p>
+                            From the first step to the final view,
+                            every part of the journey created
+                            memories worth carrying home.
+                        </p>
+
+                        <a href="#" class="read-story">
+                            Read Story
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- STORY 3 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="story-card">
+
+                    <div class="story-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=900&q=80"
+                            alt="Mountain Trekking">
+
+                        <span class="story-label">
+                            EXPLORATION
+                        </span>
+
+                    </div>
+
+
+                    <div class="story-content">
+
+                        <span class="story-category">
+                            TREKKING
+                        </span>
+
+                        <h3>
+                            Where Adventure Begins
+                        </h3>
+
+                        <p>
+                            Step away from the ordinary and discover
+                            the beauty of mountain trails, quiet valleys
+                            and open skies.
+                        </p>
+
+                        <a href="#" class="read-story">
+                            Read Story
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- STORY 4 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="story-card">
+
+                    <div class="story-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80"
+                            alt="Snow Mountain">
+
+                        <span class="story-label">
+                            DISCOVERY
+                        </span>
+
+                    </div>
+
+
+                    <div class="story-content">
+
+                        <span class="story-category">
+                            MOUNTAIN LIFE
+                        </span>
+
+                        <h3>
+                            Into The Wild
+                        </h3>
+
+                        <p>
+                            Discover what happens when you leave
+                            familiar paths behind and experience
+                            the mountains from a new perspective.
+                        </p>
+
+                        <a href="#" class="read-story">
+                            Read Story
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- STORY 5 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="story-card">
+
+                    <div class="story-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=900&q=80"
+                            alt="Mountain Landscape">
+
+                        <span class="story-label">
+                            EXPERIENCE
+                        </span>
+
+                    </div>
+
+
+                    <div class="story-content">
+
+                        <span class="story-category">
+                            EXPLORATION
+                        </span>
+
+                        <h3>
+                            Chasing New Horizons
+                        </h3>
+
+                        <p>
+                            Every new trail brings a different view,
+                            a new challenge and another reason to
+                            keep exploring.
+                        </p>
+
+                        <a href="#" class="read-story">
+                            Read Story
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- STORY 6 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="story-card">
+
+                    <div class="story-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1486911278844-a81c5267e227?auto=format&fit=crop&w=900&q=80"
+                            alt="Mountain Peak">
+
+                        <span class="story-label">
+                            INSPIRATION
+                        </span>
+
+                    </div>
+
+
+                    <div class="story-content">
+
+                        <span class="story-category">
+                            MOUNTAIN SPIRIT
+                        </span>
+
+                        <h3>
+                            The Call Of The Mountains
+                        </h3>
+
+                        <p>
+                            There is something special about standing
+                            beneath a mountain and deciding to take
+                            the first step toward its summit.
+                        </p>
+
+                        <a href="#" class="read-story">
+                            Read Story
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FEATURED STORY ================= -->
+
+<section class="featured-story">
+
+    <div class="container">
+
+        <div class="featured-box">
+
+            <div class="row align-items-center g-0">
+
+
+                <div class="col-lg-6">
+
+                    <div class="featured-image">
+
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfmzSea_7_DfA_62zoY6le_LP3UacJT22kknsZi0-JrA&s"
+                            alt="Mountain Expedition">
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="featured-content">
+
+                        <span class="section-tag">
+                            FEATURED STORY
+                        </span>
+
+                        <h2>
+                            The Journey Is
+                            <b>The Reward</b>
+                        </h2>
+
+                        <p>
+                            Reaching the top is only one part of
+                            a mountain adventure. The real story
+                            is everything that happens along the way.
+                        </p>
+
+                        <p>
+                            The people you meet, the challenges
+                            you overcome and the views you discover
+                            become memories that stay with you.
+                        </p>
+
+                        <a href="#" class="featured-btn">
+                            Explore Story
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SHARE STORY ================= -->
+
+<section class="share-section">
+
+    <div class="container">
+
+        <div class="share-content">
+
+            <i class="bi bi-journal-richtext"></i>
+
+            <span>YOUR ADVENTURE MATTERS</span>
+
+            <h2>
+                Every Adventure Has A
+                <b>Story</b>
+            </h2>
+
+            <p>
+                Mountains create memories that deserve to be shared.
+                Keep exploring, keep learning and keep discovering.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+
+            <!-- ABOUT -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="footer-logo">
+
+                    <i class="bi bi-mountains"></i>
+
+                    <div>
+
+                        <b>ALPINE</b>
+
+                        <small>ASCENTS</small>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+                    Explore the world of mountaineering.
+                    Learn, prepare and discover your next
+                    mountain adventure.
+                </p>
+
+
+                <div class="social-icons">
+
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="col-lg-2 col-md-6">
+
+                <h5>Quick Links</h5>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="../home.index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../ABOUT.PAGE/about.index.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../TECHNIQUES.PAGE/techniques.index.html">
+                            Techniques
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../RECORDS.PAGE/records.index.html">
+                            Records
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../SHELTERING.PAGE/sheltering.index.html">
+                            Sheltering
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./stories.index.html">
+                            Stories
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- EXPLORE -->
+
+            <div class="col-lg-2 col-md-6">
+
+                <h5>Explore</h5>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="#">Safety</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Equipment</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Guidelines</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Expeditions</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Community</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- CONTACT -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <h5>Contact Us</h5>
+
+
+                <div class="contact-item">
+
+                    <i class="bi bi-geo-alt"></i>
+
+                    <span>
+                        Manali, Himachal Pradesh, India
+                    </span>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <i class="bi bi-envelope"></i>
+
+                    <span>
+                        info@peakexpeditions.com
+                    </span>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <i class="bi bi-telephone"></i>
+
+                    <span>
+                        +91 98765 43210
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2025 Alpine Ascents. All Rights Reserved.
+            </span>
+
+            <span>
+                Explore • Climb • Conquer
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- ================= STORY POP-UP ================= -->
+
+<div class="modal fade story-modal" id="storyModal" tabindex="-1" aria-labelledby="storyModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <img class="story-modal-image" data-modal-image src="" alt="">
+            <div class="modal-body">
+                <span class="story-modal-category" data-modal-category></span>
+                <h2 id="storyModalTitle" data-modal-title></h2>
+                <p data-modal-description></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
+

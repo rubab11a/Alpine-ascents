@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sheltering | Alpine Ascents</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="sheltering.style.css">
+    <link rel="stylesheet" href="interactions.css">
+    <script src="interactions.js" defer></script>
+    <script src="content-modal.js" defer></script>
+    <script src="shared-footer.js" defer></script>
+</head>
+
+<body>
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark main-nav">
+
+    <div class="container">
+
+        <a class="navbar-brand logo" href="index.html">
+
+            <i class="bi bi-mountains"></i>
+
+            <span>
+                <b>Alpine</b>
+                <small>ASCENTS</small>
+            </span>
+
+        </a>
+
+        <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.index.html">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="techniques.index.html">
+                        Techniques
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="records.index.html">
+                        Records
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="sheltering.index.html">
+                        Sheltering
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="organizations.index.html">
+                        Organizations
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="stories.index.html">
+                        Stories
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.index.html">
+                        Gallery
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="updates.index.html">
+                        Updates
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="guidelines.index.html">
+                        Guidelines
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.index.html">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="visitors">
+                <i class="bi bi-people"></i>
+                Visitors: 12,458
+            </div>
+
+            </div>
+
+        </div>
+</nav>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="shelter-hero">
+
+    <div class="shelter-overlay"></div>
+
+    <div class="container position-relative">
+
+        <div class="shelter-hero-content">
+
+            <span>MOUNTAIN STAY</span>
+
+            <h1>
+                Safe <br>
+                Mountain <br>
+                <b>Sheltering.</b>
+            </h1>
+
+            <p>
+                Discover mountain camps, shelters and safe
+                places to rest during your expedition.
+            </p>
+
+            <a href="#shelters" class="orange-btn">
+                EXPLORE SHELTERS
+                <i class="bi bi-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="intro section-padding">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>STAY SAFE</span>
+
+            <h2>
+                Shelter in the <b>Mountains</b>
+            </h2>
+
+        </div>
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <img
+                    class="intro-img"
+                    src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=1000&q=80"
+                    alt="Mountain Camping"
+                >
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="intro-content">
+
+                    <h3>
+                        A Safe Place Above The Clouds
+                    </h3>
+
+                    <p>
+                        Sheltering is an important part of every
+                        mountain expedition. A good shelter provides
+                        climbers with a protected place to rest,
+                        recover and prepare for the next stage.
+                    </p>
+
+                    <p>
+                        From temporary expedition tents to mountain
+                        huts and organized base camps, different
+                        shelters are used according to the location,
+                        weather and type of expedition.
+                    </p>
+
+                    <div class="check-list">
+
+                        <div>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Safe resting areas
+                        </div>
+
+                        <div>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Protection from weather
+                        </div>
+
+                        <div>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Comfortable expedition camps
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SHELTER TYPES ================= -->
+
+<section class="shelters section-padding" id="shelters">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>SHELTER OPTIONS</span>
+
+            <h2>
+                Types of <b>Mountain Shelters</b>
+            </h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- CARD 1 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="shelter-card">
+
+                    <div class="card-icon">
+                        <i class="bi bi-tent"></i>
+                    </div>
+
+                    <h3>
+                        Expedition Tents
+                    </h3>
+
+                    <p>
+                        Strong and practical tents used by
+                        climbers during mountain expeditions
+                        and remote camping trips.
+                    </p>
+
+                    <a href="#">
+                        LEARN MORE
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="shelter-card">
+
+                    <div class="card-icon">
+                        <i class="bi bi-house"></i>
+                    </div>
+
+                    <h3>
+                        Mountain Huts
+                    </h3>
+
+                    <p>
+                        Mountain huts provide climbers with
+                        a convenient place to rest during
+                        longer mountain journeys.
+                    </p>
+
+                    <a href="#">
+                        LEARN MORE
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="shelter-card">
+
+                    <div class="card-icon">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+
+                    <h3>
+                        Base Camps
+                    </h3>
+
+                    <p>
+                        Organized base camps serve as important
+                        starting points and resting locations
+                        for major expeditions.
+                    </p>
+
+                    <a href="#">
+                        LEARN MORE
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CAMPING ================= -->
+
+<section class="camping section-padding">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6 order-lg-2">
+
+                <img
+                    class="camping-img"
+                    src="https://images.unsplash.com/photo-1478827387698-1527781a4887?auto=format&fit=crop&w=1000&q=80"
+                    alt="Mountain Camp"
+                >
+
+            </div>
+
+            <div class="col-lg-6 order-lg-1">
+
+                <div class="section-title">
+
+                    <span>MOUNTAIN CAMPING</span>
+
+                    <h2>
+                        Comfortable <b>Camp Life</b>
+                    </h2>
+
+                </div>
+
+                <p>
+                    A well-organized camp helps climbers maintain
+                    energy and focus during demanding expeditions.
+                    Proper planning makes mountain stays safer
+                    and more comfortable.
+                </p>
+
+                <div class="camp-points">
+
+                    <div>
+
+                        <i class="bi bi-shield-check"></i>
+
+                        <div>
+                            <h4>Safe Location</h4>
+                            <p>
+                                Choose suitable and protected
+                                locations for setting up camp.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="bi bi-cloud-snow"></i>
+
+                        <div>
+                            <h4>Weather Protection</h4>
+                            <p>
+                                Prepare shelters according to
+                                changing mountain conditions.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div>
+
+                        <i class="bi bi-backpack"></i>
+
+                        <div>
+                            <h4>Essential Equipment</h4>
+                            <p>
+                                Carry the appropriate equipment
+                                required for mountain camping.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SHELTER RECORDS ================= -->
+
+<section class="shelter-records section-padding">
+
+    <div class="container">
+
+        <div class="section-title text-center">
+
+            <span>OUR SHELTER NETWORK</span>
+
+            <h2>
+                Sheltering <b>Records</b>
+            </h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="record-box">
+
+                    <i class="bi bi-tent"></i>
+
+                    <strong>120+</strong>
+
+                    <span>Expedition Tents</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="record-box">
+
+                    <i class="bi bi-house"></i>
+
+                    <strong>35+</strong>
+
+                    <span>Mountain Huts</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="record-box">
+
+                    <i class="bi bi-geo-alt"></i>
+
+                    <strong>18</strong>
+
+                    <span>Base Camps</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="record-box">
+
+                    <i class="bi bi-people"></i>
+
+                    <strong>2K+</strong>
+
+                    <span>Climbers Supported</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GUIDELINES ================= -->
+
+<section class="shelter-guidelines section-padding">
+
+    <div class="container">
+
+        <div class="section-title text-center">
+
+            <span>SMART CAMPING</span>
+
+            <h2>
+                Shelter <b>Guidelines</b>
+            </h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+
+                <div class="guideline">
+
+                    <span>01</span>
+
+                    <i class="bi bi-geo-alt"></i>
+
+                    <h3>
+                        Choose Carefully
+                    </h3>
+
+                    <p>
+                        Select a safe and suitable location
+                        before establishing your shelter.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="guideline">
+
+                    <span>02</span>
+
+                    <i class="bi bi-trash"></i>
+
+                    <h3>
+                        Keep It Clean
+                    </h3>
+
+                    <p>
+                        Keep the camp area clean and respect
+                        the surrounding mountain environment.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="guideline">
+
+                    <span>03</span>
+
+                    <i class="bi bi-shield-check"></i>
+
+                    <h3>
+                        Follow Safety Rules
+                    </h3>
+
+                    <p>
+                        Always follow expedition leaders and
+                        local mountain safety instructions.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="shelter-cta">
+
+    <div class="container text-center">
+
+        <span>
+            PREPARE FOR THE ADVENTURE
+        </span>
+
+        <h2>
+            Stay Safe.<br>
+            <b>Explore Further.</b>
+        </h2>
+
+        <p>
+            Learn more about mountain preparation and
+            make your next expedition safer.
+        </p>
+
+        <a href="contactus.index.html"
+           class="orange-btn">
+
+            CONTACT US
+            <i class="bi bi-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="footer-logo">
+
+                    <i class="bi bi-mountains"></i>
+
+                    <div>
+                        <b>ALPINE</b>
+                        <small>ASCENTS</small>
+                    </div>
+
+                </div>
+
+                <p>
+                    Explore the world of mountaineering.
+                    Learn, prepare and discover your next
+                    mountain adventure.
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-2 col-md-6">
+
+                <h5>Quick Links</h5>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="../ABOUT.PAGE/about.index.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../TECHNIQUES.PAGE/techniques.index.html">
+                            Techniques
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../RECORDS.PAGE/records.index.html">
+                            Records
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Sheltering
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-lg-2 col-md-6">
+
+                <h5>Explore</h5>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="../index.html#organizations">
+                            Organizations
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../index.html#stories">
+                            Stories
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../index.html#gallery">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../index.html#updates">
+                            Updates
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../index.html#guidelines">
+                            Guidelines
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+
+                <h5>Contact Us</h5>
+
+                <div class="contact-item">
+
+                    <i class="bi bi-geo-alt"></i>
+
+                    <span>
+                        Manali, Himachal Pradesh, India
+                    </span>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="bi bi-envelope"></i>
+
+                    <span>
+                        info@peakexpeditions.com
+                    </span>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="bi bi-telephone"></i>
+
+                    <span>
+                        +91 98765 43210
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2025 Alpine Ascents. All Rights Reserved.
+            </span>
+
+            <span>
+                Explore • Climb • Conquer
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

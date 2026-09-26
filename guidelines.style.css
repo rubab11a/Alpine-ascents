@@ -1,0 +1,783 @@
+/* ================= NAVBAR ================= */
+
+.main-nav {
+    background: #071b30;
+    padding: 14px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo > i {
+    font-size: 32px;
+    color: #ff7800;
+}
+
+.logo span {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo b {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.logo small {
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: #ff7800;
+    margin-top: 5px;
+}
+
+.main-nav .nav-link {
+    color: #bbb;
+    font-size: 13px;
+    margin: 0 3px;
+    transition: .3s;
+}
+
+.main-nav .nav-link:hover,
+.main-nav .nav-link.active {
+    color: #ff7800;
+}
+
+.visitors {
+    color: #ffffff;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.visitors i {
+    color: #ff7800;
+    margin-right: 5px;
+}
+
+
+/* ================= HERO ================= */
+
+.guidelines-hero {
+    min-height: 520px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background:
+        url("https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=1800&q=85")
+        center / cover no-repeat;
+    border-radius: 0 0 16px 16px;
+}
+
+.guidelines-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(7, 27, 48, .95),
+        rgba(7, 27, 48, .68),
+        rgba(7, 27, 48, .25)
+    );
+}
+
+.guidelines-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+    padding: 70px 0;
+}
+
+.guidelines-hero-content > span {
+    color: #ff7800;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.guidelines-hero-content h1 {
+    color: #ffffff;
+    font-size: 62px;
+    line-height: 1.08;
+    margin: 18px 0;
+    font-weight: 700;
+}
+
+.guidelines-hero-content h1 b {
+    color: #ff7800;
+    display: block;
+}
+
+.guidelines-hero-content p {
+    color: #e3e8ed;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 540px;
+    margin-bottom: 30px;
+}
+
+.guidelines-main-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 24px;
+    background: #ff7800;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.guidelines-main-btn:hover {
+    background: #ffffff;
+    color: #071b30;
+    transform: translateY(-3px);
+}
+
+
+/* ================= COMMON TITLE ================= */
+
+.guidelines-section-title {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.guidelines-section-title > span {
+    color: #ff7800;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.guidelines-section-title h2 {
+    color: #071b30;
+    font-size: 38px;
+    font-weight: 700;
+    margin: 10px 0 14px;
+}
+
+.guidelines-section-title h2 b {
+    color: #ff7800;
+}
+
+.guidelines-section-title p {
+    color: #6c757d;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* ================= INTRO ================= */
+
+.guidelines-intro {
+    padding: 85px 0;
+    background: #f5f7f9;
+}
+
+.guideline-mini-card {
+    height: 100%;
+    background: #ffffff;
+    padding: 32px 28px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e9edf1;
+    transition: .3s;
+}
+
+.guideline-mini-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(7, 27, 48, .10);
+}
+
+.guideline-mini-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: rgba(255, 120, 0, .10);
+    color: #ff7800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+}
+
+.guideline-mini-card h4 {
+    color: #071b30;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.guideline-mini-card p {
+    color: #6c757d;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* ================= SAFETY GUIDELINES ================= */
+
+.safety-guidelines {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.safety-card {
+    height: 100%;
+    position: relative;
+    padding: 35px 30px;
+    background: #f5f7f9;
+    border-radius: 12px;
+    border: 1px solid #e5e9ed;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.safety-card:hover {
+    transform: translateY(-7px);
+    border-color: #ff7800;
+    box-shadow: 0 15px 35px rgba(7, 27, 48, .10);
+}
+
+.safety-number {
+    position: absolute;
+    top: 15px;
+    right: 22px;
+    font-size: 45px;
+    font-weight: 700;
+    color: rgba(7, 27, 48, .06);
+}
+
+.safety-icon {
+    width: 58px;
+    height: 58px;
+    background: #071b30;
+    color: #ff7800;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 22px;
+}
+
+.safety-card h3 {
+    color: #071b30;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.safety-card p {
+    color: #6c757d;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+.safety-line {
+    height: 2px;
+    width: 40px;
+    background: #ff7800;
+    margin-bottom: 12px;
+}
+
+.safety-card > span {
+    color: #071b30;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+/* ================= CHECKLIST ================= */
+
+.guidelines-checklist {
+    padding: 90px 0;
+    background: #f5f7f9;
+}
+
+.checklist-image {
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.checklist-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.checklist-badge {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    background: #071b30;
+    color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.checklist-badge i {
+    color: #ff7800;
+    font-size: 28px;
+}
+
+.checklist-badge div {
+    display: flex;
+    flex-direction: column;
+}
+
+.checklist-badge strong {
+    font-size: 13px;
+}
+
+.checklist-badge small {
+    color: #ff7800;
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-top: 3px;
+}
+
+.checklist-content {
+    padding-left: 20px;
+}
+
+.checklist-content > span {
+    color: #ff7800;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.checklist-content h2 {
+    color: #071b30;
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 12px 0 15px;
+}
+
+.checklist-content h2 b {
+    color: #ff7800;
+}
+
+.checklist-content > p {
+    color: #6c757d;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.check-list-item {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.check-list-item > i {
+    color: #ff7800;
+    font-size: 19px;
+    margin-top: 3px;
+}
+
+.check-list-item h5 {
+    color: #071b30;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.check-list-item p {
+    color: #6c757d;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* ================= RESPONSIBLE SECTION ================= */
+
+.responsible-section {
+    padding: 75px 0;
+    background: #ffffff;
+}
+
+.responsible-box {
+    background: #071b30;
+    border-radius: 14px;
+    padding: 45px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.responsible-icon {
+    min-width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: rgba(255, 120, 0, .12);
+    color: #ff7800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.responsible-content {
+    flex: 1;
+}
+
+.responsible-content > span {
+    color: #ff7800;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.responsible-content h2 {
+    color: #ffffff;
+    font-size: 28px;
+    margin: 8px 0 10px;
+}
+
+.responsible-content h2 b {
+    color: #ff7800;
+}
+
+.responsible-content p {
+    color: #cbd4dc;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.responsible-btn {
+    white-space: nowrap;
+    padding: 13px 20px;
+    background: #ff7800;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.responsible-btn:hover {
+    background: #ffffff;
+    color: #071b30;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: #071b30;
+    color: #ffffff;
+    padding: 70px 0 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.footer-logo > i {
+    color: #ff7800;
+    font-size: 32px;
+}
+
+.footer-logo div {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.footer-logo b {
+    font-size: 19px;
+}
+
+.footer-logo small {
+    color: #ff7800;
+    font-size: 9px;
+    letter-spacing: 3px;
+    margin-top: 5px;
+}
+
+.footer p {
+    color: #aeb9c4;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer h5 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #aeb9c4;
+    text-decoration: none;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.footer-links a:hover {
+    color: #ff7800;
+    padding-left: 4px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 9px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgba(255,255,255,.15);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.social-icons a:hover {
+    background: #ff7800;
+    border-color: #ff7800;
+    color: #ffffff;
+}
+
+.contact-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+    color: #aeb9c4;
+    font-size: 13px;
+}
+
+.contact-item i {
+    color: #ff7800;
+    font-size: 17px;
+}
+
+.footer-bottom {
+    margin-top: 45px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: #7f8c98;
+    font-size: 12px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1199px) {
+
+    .main-nav .nav-link {
+        font-size: 11px;
+        margin: 0 1px;
+    }
+
+    .visitors {
+        font-size: 11px;
+    }
+
+}
+
+
+@media (max-width: 991px) {
+
+    .main-nav {
+        padding: 12px 0;
+    }
+
+    .main-nav .navbar-nav {
+        padding: 20px 0 10px;
+    }
+
+    .main-nav .nav-link {
+        padding: 9px 0;
+        font-size: 14px;
+    }
+
+    .visitors {
+        padding-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .guidelines-hero {
+        min-height: 470px;
+    }
+
+    .guidelines-hero-content h1 {
+        font-size: 50px;
+    }
+
+    .checklist-content {
+        padding-left: 0;
+    }
+
+    .responsible-box {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .guidelines-hero {
+        min-height: 450px;
+        text-align: center;
+    }
+
+    .guidelines-hero-content {
+        padding: 55px 15px;
+        margin: auto;
+    }
+
+    .guidelines-hero-content h1 {
+        font-size: 40px;
+    }
+
+    .guidelines-hero-content p {
+        font-size: 15px;
+    }
+
+    .guidelines-section-title {
+        margin-bottom: 32px;
+    }
+
+    .guidelines-section-title h2 {
+        font-size: 30px;
+    }
+
+    .guidelines-intro,
+    .safety-guidelines,
+    .guidelines-checklist {
+        padding: 65px 0;
+    }
+
+    .checklist-image {
+        height: 360px;
+    }
+
+    .checklist-content h2 {
+        font-size: 32px;
+    }
+
+    .responsible-section {
+        padding: 55px 0;
+    }
+
+    .responsible-box {
+        padding: 30px 25px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .responsible-icon {
+        margin: auto;
+    }
+
+    .responsible-content h2 {
+        font-size: 24px;
+    }
+
+    .responsible-btn {
+        margin: auto;
+    }
+
+    .footer {
+        padding-top: 55px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .logo > i {
+        font-size: 27px;
+    }
+
+    .logo b {
+        font-size: 17px;
+    }
+
+    .guidelines-hero {
+        min-height: 420px;
+    }
+
+    .guidelines-hero-content > span {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .guidelines-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .guidelines-hero-content p {
+        font-size: 14px;
+    }
+
+    .guidelines-main-btn {
+        padding: 11px 17px;
+        font-size: 11px;
+    }
+
+    .safety-card {
+        padding: 28px 23px;
+    }
+
+    .checklist-image {
+        height: 300px;
+    }
+
+    .checklist-badge {
+        left: 15px;
+        bottom: 15px;
+        padding: 11px 14px;
+    }
+
+    .responsible-content h2 {
+        font-size: 21px;
+    }
+
+}

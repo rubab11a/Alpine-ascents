@@ -1,0 +1,1152 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.main-nav {
+    background: #071b30;
+    min-height: 70px;
+    border-bottom: 1px solid #20364a;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    font-size: 35px;
+    color: #ff7800;
+}
+
+.logo span {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo b {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.logo small {
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: #ff7800;
+    margin-top: 5px;
+}
+
+.navbar-nav {
+    gap: 15px;
+}
+
+.nav-link {
+    color: #dce5eb !important;
+    font-size: 12px;
+    padding: 25px 13px;
+    transition: .3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ff7800 !important;
+}
+
+.visitors {
+    color: #ddd;
+    font-size: 14px;
+}
+
+.visitors i {
+    color: #ff7800;
+    margin-right: 5px;
+}
+
+
+/* =========================================================
+   RECORDS MAIN SECTION
+   ========================================================= */
+
+.records-main-section {
+    background: #f5f7f9;
+    padding: 35px 0 90px;
+    position: relative;
+}
+
+/* Small gap after hero */
+.records-main-section::before {
+    content: "";
+    display: block;
+    height: 12px;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.records-section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.records-section-heading span {
+    display: inline-block;
+    color: #f47b20;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.records-section-heading h2 {
+    color: #071b30;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.records-section-heading h2 b {
+    color: #f47b20;
+}
+
+.records-section-heading p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #687583;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RECORDS TABLE BOX
+   ========================================================= */
+
+.records-table-wrapper {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 8px;
+    box-shadow: 0 10px 35px rgba(7, 27, 48, 0.08);
+    overflow-x: auto;
+    margin-bottom: 55px;
+}
+
+.records-table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.records-table thead {
+    background: #071b30;
+}
+
+.records-table th {
+    color: #ffffff;
+    padding: 17px 18px;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+    white-space: nowrap;
+    border: none;
+}
+
+.records-table th:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.records-table th:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+.records-table td {
+    padding: 17px 18px;
+    color: #52606d;
+    font-size: 14px;
+    border-bottom: 1px solid #edf0f3;
+    vertical-align: middle;
+}
+
+.records-table tbody tr {
+    transition: 0.3s ease;
+}
+
+.records-table tbody tr:hover {
+    background: #fff8f2;
+}
+
+.records-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   TABLE TEXT
+   ========================================================= */
+
+.records-table .record-name {
+    color: #071b30;
+    font-weight: 700;
+}
+
+.records-table .mountain-name {
+    color: #f47b20;
+    font-weight: 700;
+}
+
+.records-table .record-year {
+    color: #071b30;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   RECORD CARDS AREA
+   ========================================================= */
+
+.records-cards-area {
+    margin-top: 10px;
+}
+
+.records-card {
+    height: 100%;
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #edf0f3;
+    box-shadow: 0 8px 28px rgba(7, 27, 48, 0.07);
+    transition: all 0.35s ease;
+}
+
+.records-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 16px 35px rgba(7, 27, 48, 0.13);
+}
+
+
+/* =========================================================
+   CARD IMAGE
+   ========================================================= */
+
+.records-card-image {
+    height: 210px;
+    overflow: hidden;
+    position: relative;
+}
+
+.records-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.records-card:hover .records-card-image img {
+    transform: scale(1.07);
+}
+
+.records-card-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(7, 27, 48, 0.02),
+        rgba(7, 27, 48, 0.35)
+    );
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.records-card-content {
+    padding: 25px 24px 27px;
+}
+
+.records-card-content span {
+    display: inline-block;
+    color: #f47b20;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 9px;
+    text-transform: uppercase;
+}
+
+.records-card-content h3 {
+    color: #071b30;
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 1.35;
+    margin-bottom: 10px;
+}
+
+.records-card-content p {
+    color: #697783;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* =========================================================
+   FEATURE RECORD
+   ========================================================= */
+
+.records-feature-box {
+    margin-top: 55px;
+    background: #071b30;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 12px 35px rgba(7, 27, 48, 0.15);
+}
+
+.records-feature-content {
+    padding: 45px;
+}
+
+.records-feature-content span {
+    color: #f47b20;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.records-feature-content h3 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 800;
+    margin: 12px 0 15px;
+}
+
+.records-feature-content h3 b {
+    color: #f47b20;
+}
+
+.records-feature-content p {
+    color: #c9d3dc;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.records-feature-content ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.records-feature-content ul li {
+    color: #e4ebf0;
+    font-size: 14px;
+    margin-bottom: 11px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.records-feature-content ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f47b20;
+    font-weight: 700;
+}
+
+.records-feature-image {
+    height: 100%;
+    min-height: 330px;
+}
+
+.records-feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================================================
+   LOCATION BOX
+   ========================================================= */
+
+.records-location-box {
+    margin-top: 55px;
+    background: #ffffff;
+    border: 1px solid #e8edf1;
+    border-left: 5px solid #f47b20;
+    border-radius: 12px;
+    padding: 25px 28px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 7px 25px rgba(7, 27, 48, 0.06);
+}
+
+.records-location-icon {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    border-radius: 50%;
+    background: #fff1e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.records-location-icon i {
+    color: #f47b20;
+    font-size: 23px;
+}
+
+.records-location-content h4 {
+    color: #071b30;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.records-location-content p {
+    color: #6b7782;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.records-main-btn {
+    display: inline-block;
+    background: #f47b20;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.records-main-btn:hover {
+    background: #d9630e;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .records-main-section {
+        padding: 30px 0 70px;
+    }
+
+    .records-section-heading h2 {
+        font-size: 31px;
+    }
+
+    .records-table-wrapper {
+        margin-bottom: 45px;
+    }
+
+    .records-card-image {
+        height: 190px;
+    }
+
+    .records-feature-content {
+        padding: 35px;
+    }
+
+    .records-feature-content h3 {
+        font-size: 26px;
+    }
+
+    .records-feature-image {
+        min-height: 280px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .records-main-section {
+        padding: 25px 0 55px;
+    }
+
+    .records-main-section::before {
+        height: 8px;
+    }
+
+    .records-section-heading {
+        margin-bottom: 30px;
+        padding: 0 12px;
+    }
+
+    .records-section-heading span {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .records-section-heading h2 {
+        font-size: 27px;
+    }
+
+    .records-section-heading p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .records-table-wrapper {
+        padding: 5px;
+        border-radius: 10px;
+        margin-bottom: 35px;
+    }
+
+    .records-table th,
+    .records-table td {
+        padding: 13px 14px;
+        font-size: 12px;
+    }
+
+    .records-card-image {
+        height: 210px;
+    }
+
+    .records-card-content {
+        padding: 22px 20px 24px;
+    }
+
+    .records-card-content h3 {
+        font-size: 19px;
+    }
+
+    .records-feature-box {
+        margin-top: 35px;
+        border-radius: 12px;
+    }
+
+    .records-feature-content {
+        padding: 28px 22px;
+    }
+
+    .records-feature-content h3 {
+        font-size: 24px;
+    }
+
+    .records-feature-content p {
+        font-size: 13px;
+    }
+
+    .records-feature-image {
+        min-height: 230px;
+    }
+
+    .records-location-box {
+        margin-top: 35px;
+        padding: 20px;
+        gap: 14px;
+    }
+
+    .records-location-icon {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+    }
+
+    .records-location-icon i {
+        font-size: 19px;
+    }
+
+    .records-location-content h4 {
+        font-size: 16px;
+    }
+
+    .records-location-content p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .records-section-heading h2 {
+        font-size: 24px;
+    }
+
+    .records-card-image {
+        height: 190px;
+    }
+
+    .records-feature-content {
+        padding: 24px 18px;
+    }
+
+    .records-feature-content h3 {
+        font-size: 21px;
+    }
+
+    .records-location-box {
+        align-items: flex-start;
+    }
+}
+/* ================= HERO ================= */
+
+.records-hero {
+    min-height: 440px;
+    position: relative;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #fff;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 18, 25, .70);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content span {
+    color: #f47b20;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.hero-content h1 {
+    font-size: 70px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+.hero-content h1 b {
+    color: #f47b20;
+}
+
+.hero-content p {
+    max-width: 700px;
+    margin: auto;
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* ================= INTRO ================= */
+
+.records-intro {
+    padding: 80px 0 45px;
+    background: #fff;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: auto;
+}
+
+.section-heading span {
+    color: #f47b20;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 45px;
+    font-weight: 800;
+    margin: 10px 0 18px;
+}
+
+.section-heading h2 b {
+    color: #f47b20;
+}
+
+.section-heading p {
+    color: #666;
+    line-height: 1.8;
+}
+
+
+/* ================= RECORD CARDS ================= */
+
+.records-section {
+    padding: 45px 0 90px;
+    background: #f5f5f5;
+}
+
+.record-card {
+    background: #fff;
+    padding: 35px 30px;
+    height: 100%;
+    position: relative;
+
+    border-top: 4px solid #f47b20;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .06);
+
+    transition: .3s;
+}
+
+.record-card:hover {
+    transform: translateY(-8px);
+}
+
+.record-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #17232b;
+}
+
+.record-icon i {
+    color: #f47b20;
+    font-size: 30px;
+}
+
+.record-number {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+
+    font-size: 35px;
+    font-weight: 800;
+
+    color: #eee;
+}
+
+.record-card h3 {
+    font-size: 23px;
+    font-weight: 700;
+    margin: 25px 0 8px;
+}
+
+.record-card h4 {
+    color: #f47b20;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.record-card p {
+    color: #666;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* ================= FEATURE RECORD ================= */
+
+.feature-record {
+    padding: 90px 0;
+    background: #fff;
+}
+
+.feature-image {
+    height: 500px;
+    overflow: hidden;
+}
+
+.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.feature-image:hover img {
+    transform: scale(1.05);
+}
+
+.section-tag {
+    color: #f47b20;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.feature-record h2 {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 12px 0 25px;
+}
+
+.feature-record h2 b {
+    color: #f47b20;
+}
+
+.feature-record p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.record-points {
+    margin-top: 25px;
+}
+
+.record-points div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+
+    font-weight: 600;
+}
+
+.record-points i {
+    color: #f47b20;
+    font-size: 19px;
+}
+
+
+/* ================= STATS ================= */
+
+.stats-section {
+    padding: 70px 0;
+    background: #17232b;
+    color: #fff;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-box i {
+    color: #f47b20;
+    font-size: 35px;
+}
+
+.stat-box strong {
+    display: block;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 8px 0;
+}
+
+.stat-box span {
+    color: #bbb;
+    font-size: 14px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: #10191f;
+    color: #fff;
+    padding: 70px 0 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.footer-logo > i {
+    color: #f47b20;
+    font-size: 38px;
+}
+
+.footer-logo div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo b {
+    font-size: 22px;
+}
+
+.footer-logo small {
+    color: #f47b20;
+    letter-spacing: 4px;
+}
+
+.footer p {
+    color: #aaa;
+    line-height: 1.7;
+}
+
+.footer h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #555;
+    color: #fff;
+
+    transition: .3s;
+}
+
+.social-icons a:hover {
+    background: #f47b20;
+    border-color: #f47b20;
+}
+
+.footer-links {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #aaa;
+    transition: .3s;
+}
+
+.footer-links a:hover {
+    color: #f47b20;
+    padding-left: 5px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+    color: #aaa;
+}
+
+.contact-item i {
+    color: #f47b20;
+    font-size: 18px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 50px;
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #888;
+    font-size: 13px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        gap: 5px;
+        margin-top: 20px;
+    }
+
+    .visitors {
+        margin-top: 15px;
+    }
+
+    .records-hero {
+        min-height: 400px;
+    }
+
+    .hero-content h1 {
+        font-size: 58px;
+    }
+
+    .feature-image {
+        height: 420px;
+    }
+
+    .feature-record h2 {
+        font-size: 40px;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 767px) {
+
+    .main-nav {
+        padding: 12px 0;
+    }
+
+    .logo i {
+        font-size: 30px;
+    }
+
+    .logo b {
+        font-size: 19px;
+    }
+
+    .records-hero {
+        min-height: 350px;
+    }
+
+    .hero-content h1 {
+        font-size: 43px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        padding: 0 20px;
+    }
+
+    .records-intro {
+        padding: 60px 0 30px;
+    }
+
+    .section-heading h2 {
+        font-size: 36px;
+    }
+
+    .records-section {
+        padding: 30px 0 60px;
+    }
+
+    .feature-record {
+        padding: 60px 0;
+    }
+
+    .feature-image {
+        height: 330px;
+    }
+
+    .feature-record h2 {
+        font-size: 35px;
+    }
+
+    .stats-section {
+        padding: 55px 0;
+    }
+
+    .stat-box strong {
+        font-size: 32px;
+    }
+
+    .footer {
+        padding-top: 55px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-content span {
+        font-size: 11px;
+    }
+
+    .record-card {
+        padding: 30px 22px;
+    }
+
+    .record-card h3 {
+        font-size: 21px;
+    }
+
+    .feature-image {
+        height: 270px;
+    }
+
+    .feature-record h2 {
+        font-size: 30px;
+    }
+
+    .feature-record p {
+        font-size: 14px;
+    }
+
+    .stat-box i {
+        font-size: 28px;
+    }
+
+    .stat-box strong {
+        font-size: 28px;
+    }
+
+    .stat-box span {
+        font-size: 12px;
+    }
+
+}

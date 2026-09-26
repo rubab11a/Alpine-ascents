@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Records | Alpine Ascents</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Records CSS -->
+    <link rel="stylesheet" href="records.style.css">
+    <link rel="stylesheet" href="interactions.css">
+    <script src="interactions.js" defer></script>
+    <script src="content-modal.js" defer></script>
+    <script src="shared-footer.js" defer></script>
+</head>
+
+<body>
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark main-nav">
+
+    <div class="container">
+
+        <a class="navbar-brand logo" href="index.html">
+
+            <i class="bi bi-mountains"></i>
+
+            <span>
+                <b>Alpine</b>
+                <small>ASCENTS</small>
+            </span>
+
+        </a>
+
+        <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.index.html">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="techniques.index.html">
+                        Techniques
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="records.index.html">
+                        Records
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="sheltering.index.html">
+                        Sheltering
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="organizations.index.html">
+                        Organizations
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="stories.index.html">
+                        Stories
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.index.html">
+                        Gallery
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="updates.index.html">
+                        Updates
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="guidelines.index.html">
+                        Guidelines
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.index.html">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="visitors">
+                <i class="bi bi-people"></i>
+                Visitors: 12,458
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+
+
+
+<!-- ================= RECORDS HERO ================= -->
+
+<section class="records-hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <span>MOUNTAINEERING ACHIEVEMENTS</span>
+
+        <h1>
+            Mountain <b>Records</b>
+        </h1>
+
+        <p>
+            Explore remarkable achievements, legendary ascents
+            and unforgettable records from the world of mountaineering.
+        </p>
+
+    </div>
+
+</section>
+<!-- ================= MAIN CONTENT ================= -->
+
+<main class="records-container">
+
+
+    <!-- ================= RECORDS TABLE ================= -->
+
+    <div class="records-table-wrapper">
+
+        <table class="records-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Record</th>
+
+                    <th>Mountain</th>
+
+                    <th>Achievement</th>
+
+                    <th>Year</th>
+
+                    <th>Mountaineer(s)</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <!-- RECORD 1 -->
+
+                <tr>
+
+                    <td class="record-name">
+                        First Ascent
+                    </td>
+
+                    <td class="mountain-name">
+                        K2
+                    </td>
+
+                    <td>
+                        First successful summit
+                    </td>
+
+                    <td class="year">
+                        1954
+                    </td>
+
+                    <td>
+                        Italian Expedition
+                    </td>
+
+                </tr>
+
+
+                <!-- RECORD 2 -->
+
+                <tr>
+
+                    <td class="record-name">
+                        Highest Peak
+                    </td>
+
+                    <td class="mountain-name">
+                        K2
+                    </td>
+
+                    <td>
+                        8,611 m
+                    </td>
+
+                    <td>
+                        —
+                    </td>
+
+                    <td>
+                        —
+                    </td>
+
+                </tr>
+
+
+                <!-- RECORD 3 -->
+
+                <tr>
+
+                    <td class="record-name">
+                        Broad Peak
+                    </td>
+
+                    <td class="mountain-name">
+                        Broad Peak
+                    </td>
+
+                    <td>
+                        Successful summit
+                    </td>
+
+                    <td class="year">
+                        1957
+                    </td>
+
+                    <td>
+                        Austrian Expedition
+                    </td>
+
+                </tr>
+
+
+                <!-- RECORD 4 -->
+
+                <tr>
+
+                    <td class="record-name">
+                        Gasherbrum I
+                    </td>
+
+                    <td class="mountain-name">
+                        Hidden Peak
+                    </td>
+
+                    <td>
+                        First successful ascent
+                    </td>
+
+                    <td class="year">
+                        1958
+                    </td>
+
+                    <td>
+                        American Expedition
+                    </td>
+
+                </tr>
+
+
+                <!-- RECORD 5 -->
+
+                <tr>
+
+                    <td class="record-name">
+                        Gasherbrum II
+                    </td>
+
+                    <td class="mountain-name">
+                        G-II
+                    </td>
+
+                    <td>
+                        First ascent
+                    </td>
+
+                    <td class="year">
+                        1956
+                    </td>
+
+                    <td>
+                        Austrian Expedition
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+function toggleMenu() {
+
+    const navigation =
+        document.getElementById("navigation");
+
+    navigation.classList.toggle("show");
+
+}
+
+
+function updateClock() {
+
+    const now = new Date();
+
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    let ampm = hours >= 12 ? "PM" : "AM";
+
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+
+    minutes =
+        minutes < 10
+        ? "0" + minutes
+        : minutes;
+
+    seconds =
+        seconds < 10
+        ? "0" + seconds
+        : seconds;
+
+    document.getElementById("currentTime").innerText =
+        hours + ":" +
+        minutes + ":" +
+        seconds + " " +
+        ampm;
+
+}
+
+updateClock();
+
+setInterval(updateClock, 1000);
+
+
+document.querySelectorAll("nav a")
+    .forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+            document
+                .getElementById("navigation")
+                .classList.remove("show");
+
+        });
+
+    });
+
+</script>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="records-intro">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>LEGENDARY ACHIEVEMENTS</span>
+
+            <h2>
+                Records That <b>Inspire</b>
+            </h2>
+
+            <p>
+                Mountains have challenged climbers for generations.
+                These achievements represent courage, preparation,
+                determination and the human desire to explore.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= RECORD CARDS ================= -->
+
+<section class="records-section">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- RECORD 1 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="record-card">
+
+                    <div class="record-icon">
+                        <i class="bi bi-trophy"></i>
+                    </div>
+
+                    <span class="record-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Highest Mountain
+                    </h3>
+
+                    <h4>
+                        Mount Everest
+                    </h4>
+
+                    <p>
+                        Mount Everest is the highest mountain
+                        above sea level, reaching an elevation of
+                        8,848.86 meters.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- RECORD 2 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="record-card">
+
+                    <div class="record-icon">
+                        <i class="bi bi-lightning-charge"></i>
+                    </div>
+
+                    <span class="record-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Fastest Ascent
+                    </h3>
+
+                    <h4>
+                        Speed & Endurance
+                    </h4>
+
+                    <p>
+                        Speed ascents require exceptional
+                        physical fitness, technical ability,
+                        preparation and careful planning.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- RECORD 3 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="record-card">
+
+                    <div class="record-icon">
+                        <i class="bi bi-globe-americas"></i>
+                    </div>
+
+                    <span class="record-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Eight-Thousanders
+                    </h3>
+
+                    <h4>
+                        14 Highest Peaks
+                    </h4>
+
+                    <p>
+                        The world's fourteen mountains above
+                        8,000 meters are among the most demanding
+                        objectives in mountaineering.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- RECORD 4 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="record-card">
+
+                    <div class="record-icon">
+                        <i class="bi bi-person-check"></i>
+                    </div>
+
+                    <span class="record-number">
+                        04
+                    </span>
+
+                    <h3>
+                        First Ascents
+                    </h3>
+
+                    <h4>
+                        Historic Climbs
+                    </h4>
+
+                    <p>
+                        First ascents mark the moment when
+                        climbers successfully reach a summit
+                        by a previously unclimbed route.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- RECORD 5 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="record-card">
+
+                    <div class="record-icon">
+                        <i class="bi bi-snow"></i>
+                    </div>
+
+                    <span class="record-number">
+                        05
+                    </span>
+
+                    <h3>
+                        Winter Ascents
+                    </h3>
+
+                    <h4>
+                        Extreme Conditions
+                    </h4>
+
+                    <p>
+                        Winter mountaineering brings extreme
+                        cold, snow, ice and difficult weather
+                        conditions to already challenging climbs.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- RECORD 6 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="record-card">
+
+                    <div class="record-icon">
+                        <i class="bi bi-flag"></i>
+                    </div>
+
+                    <span class="record-number">
+                        06
+                    </span>
+
+                    <h3>
+                        Historic Expeditions
+                    </h3>
+
+                    <h4>
+                        Legendary Journeys
+                    </h4>
+
+                    <p>
+                        Historic expeditions have helped expand
+                        knowledge of mountains and inspired
+                        generations of climbers.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURE RECORD ================= -->
+
+<section class="feature-record">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <div class="feature-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1000&q=85"
+                        alt="Mountain Expedition">
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <span class="section-tag">
+                    THE WORLD OF RECORDS
+                </span>
+
+                <h2>
+                    Beyond The <b>Summit</b>
+                </h2>
+
+                <p>
+                    Mountaineering records are not only about
+                    reaching the highest point. They represent
+                    years of preparation, technical knowledge,
+                    teamwork and determination.
+                </p>
+
+                <p>
+                    Every expedition has its own challenges.
+                    Weather, altitude, terrain and route conditions
+                    can make a climb completely different from
+                    another.
+                </p>
+
+                <div class="record-points">
+
+                    <div>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Exceptional climbing achievements</span>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Historic mountain expeditions</span>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Extreme altitude challenges</span>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Stories of exploration and courage</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats-section">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-6 col-lg-3">
+
+                <div class="stat-box">
+
+                    <i class="bi bi-trophy"></i>
+
+                    <strong>100+</strong>
+
+                    <span>Major Records</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <div class="stat-box">
+
+                    <i class="bi bi-mountains"></i>
+
+                    <strong>8,848m</strong>
+
+                    <span>Highest Summit</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <div class="stat-box">
+
+                    <i class="bi bi-globe"></i>
+
+                    <strong>14</strong>
+
+                    <span>Eight-Thousanders</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <div class="stat-box">
+
+                    <i class="bi bi-people"></i>
+
+                    <strong>10K+</strong>
+
+                    <span>Climbing Community</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- ABOUT -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="footer-logo">
+
+                    <i class="bi bi-mountains"></i>
+
+                    <div>
+                        <b>ALPINE</b>
+                        <small>ASCENTS</small>
+                    </div>
+
+                </div>
+
+                <p>
+                    Explore the world of mountaineering.
+                    Learn, prepare and discover your next
+                    mountain adventure.
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="col-lg-2 col-md-6">
+
+                <h5>Quick Links</h5>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="../home.index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="./about.index.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="./techniques.index.html">
+                            Techniques
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./records.index.html">
+                            Records
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../home.index.html#gallery">
+                            Gallery
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- EXPLORE -->
+
+            <div class="col-lg-2 col-md-6">
+
+                <h5>Explore</h5>
+
+                <ul class="footer-links">
+
+                    <li><a href="#">Safety</a></li>
+                    <li><a href="#">Equipment</a></li>
+                    <li><a href="#">Guidelines</a></li>
+                    <li><a href="#">Expeditions</a></li>
+                    <li><a href="#">Community</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <h5>Contact Us</h5>
+
+                <div class="contact-item">
+
+                    <i class="bi bi-geo-alt"></i>
+
+                    <span>
+                        Manali, Himachal Pradesh, India
+                    </span>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="bi bi-envelope"></i>
+
+                    <span>
+                        info@peakexpeditions.com
+                    </span>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="bi bi-telephone"></i>
+
+                    <span>
+                        +91 98765 43210
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2025 Alpine Ascents. All Rights Reserved.
+            </span>
+
+            <span>
+                Explore • Climb • Conquer
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

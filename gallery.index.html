@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Alpine Ascents</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Gallery CSS -->
+    <link rel="stylesheet" href="gallery.style.css">
+
+    <link rel="stylesheet" href="interactions.css">
+    <script src="interactions.js" defer></script>
+    <script src="content-modal.js" defer></script>
+    <script src="shared-footer.js" defer></script>
+</head>
+
+<body>
+    <!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark main-nav">
+
+    <div class="container">
+
+        <a class="navbar-brand logo" href="index.html">
+
+            <i class="bi bi-mountains"></i>
+
+            <span>
+                <b>Alpine</b>
+                <small>ASCENTS</small>
+            </span>
+
+        </a>
+
+        <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.index.html">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="techniques.index.html">
+                        Techniques
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="records.index.html">
+                        Records
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="sheltering.index.html">
+                        Sheltering
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="organizations.index.html">
+                        Organizations
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="stories.index.html">
+                        Stories
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.index.html">
+                        Gallery
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="updates.index.html">
+                        Updates
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="guidelines.index.html">
+                        Guidelines
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.index.html">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="visitors">
+                <i class="bi bi-people"></i>
+                Visitors: 12,458
+            </div></div></div></nav>
+<!-- ================= HERO ================= -->
+
+<section class="gallery-hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <p class="hero-small">ALPINE ASCENTS / VISUAL ARCHIVE</p>
+
+        <h1>
+            MOMENTS<br>
+            <span>ABOVE THE WORLD</span>
+        </h1>
+
+        <p class="hero-text">
+            Explore the peaks, people and unforgettable moments
+            captured throughout our alpine journeys.
+        </p>
+
+        <a href="#collection" class="hero-btn">
+            Explore Collection
+            <i class="bi bi-arrow-down"></i>
+        </a>
+
+    </div>
+
+    <div class="scroll-text">
+        SCROLL TO EXPLORE
+    </div>
+
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="gallery-intro" id="collection">
+
+    <div class="container">
+
+        <div class="row align-items-end">
+
+            <div class="col-lg-7">
+
+                <span class="section-number">01 / GALLERY</span>
+
+                <h2>
+                    A VISUAL
+                    <strong>JOURNEY</strong>
+                </h2>
+
+            </div>
+
+            <div class="col-lg-5">
+
+                <p class="intro-text">
+                    Every mountain tells a story. Every expedition leaves
+                    behind a memory. This collection captures the raw beauty,
+                    determination and spirit of life above the clouds.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FILTER ================= -->
+
+<section class="filter-section">
+
+    <div class="container">
+
+        <div class="filter-wrap">
+
+            <button class="filter-btn active" data-filter="all">
+                ALL
+            </button>
+
+            <button class="filter-btn" data-filter="peaks">
+                PEAKS
+            </button>
+
+            <button class="filter-btn" data-filter="expeditions">
+                EXPEDITIONS
+            </button>
+
+            <button class="filter-btn" data-filter="climbers">
+                CLIMBERS
+            </button>
+
+            <button class="filter-btn" data-filter="landscapes">
+                LANDSCAPES
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MASONRY GALLERY ================= -->
+
+<section class="gallery-section">
+
+    <div class="container-fluid">
+
+        <div class="gallery-grid">
+
+
+            <!-- IMAGE 01 -->
+
+            <div class="gallery-card large"
+                 data-category="peaks"
+                 data-title="The White Giant"
+                 data-location="Himalayan Range">
+
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=90"
+                     alt="Mountain Peak">
+
+                <div class="gallery-overlay">
+
+                    <span>01 / PEAKS</span>
+
+                    <h3>The White Giant</h3>
+
+                    <p>Himalayan Range</p>
+
+                    <button class="view-btn">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 02 -->
+
+            <div class="gallery-card"
+                 data-category="climbers"
+                 data-title="Into The Wild"
+                 data-location="Northern Pakistan">
+
+                <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=900&q=90"
+                     alt="Mountain Climber">
+
+                <div class="gallery-overlay">
+
+                    <span>02 / CLIMBERS</span>
+
+                    <h3>Into The Wild</h3>
+
+                    <p>Northern Pakistan</p>
+
+                    <button class="view-btn">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 03 -->
+
+            <div class="gallery-card tall"
+                 data-category="landscapes"
+                 data-title="Above The Clouds"
+                 data-location="Karakoram">
+
+                <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=90"
+                     alt="Snow Mountains">
+
+                <div class="gallery-overlay">
+
+                    <span>03 / LANDSCAPES</span>
+
+                    <h3>Above The Clouds</h3>
+
+                    <p>Karakoram</p>
+
+                    <button class="view-btn">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 04 -->
+
+            <div class="gallery-card"
+                 data-category="expeditions"
+                 data-title="The Long Ascent"
+                 data-location="K2 Base Camp">
+
+                <img src="https://images.unsplash.com/photo-1486911278844-a81c5267e227?auto=format&fit=crop&w=900&q=90"
+                     alt="Mountain Expedition">
+
+                <div class="gallery-overlay">
+
+                    <span>04 / EXPEDITIONS</span>
+
+                    <h3>The Long Ascent</h3>
+
+                    <p>K2 Base Camp</p>
+
+                    <button class="view-btn">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 05 -->
+
+            <div class="gallery-card wide"
+                 data-category="peaks"
+                 data-title="Edge Of The World"
+                 data-location="Karakoram Mountains">
+
+                <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=90"
+                     alt="High Mountain">
+
+                <div class="gallery-overlay">
+
+                    <span>05 / PEAKS</span>
+
+                    <h3>Edge Of The World</h3>
+
+                    <p>Karakoram Mountains</p>
+
+                    <button class="view-btn">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 06 -->
+
+            <div class="gallery-card"
+                 data-category="climbers"
+                 data-title="One Step Higher"
+                 data-location="Alpine Route">
+
+                <img src="https://images.unsplash.com/photo-1527489377706-5bf97e608852?auto=format&fit=crop&w=900&q=90"
+                     alt="Climber">
+
+                <div class="gallery-overlay">
+
+                    <span>06 / CLIMBERS</span>
+
+                    <h3>One Step Higher</h3>
+
+                    <p>Alpine Route</p>
+
+                    <button class="view-btn">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 07 -->
+
+            <div class="gallery-card tall"
+                 data-category="landscapes"
+                 data-title="Frozen Silence"
+                 data-location="High Himalayas">
+
+                <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=900&q=90"
+                     alt="Frozen Mountain">
+
+                <div class="gallery-overlay">
+
+                    <span>07 / LANDSCAPES</span>
+
+                    <h3>Frozen Silence</h3>
+
+                    <p>High Himalayas</p>
+
+                    <button class="view-btn">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 08 -->
+
+            <div class="gallery-card"
+                 data-category="expeditions"
+                 data-title="Base Camp Stories"
+                 data-location="Baltoro Glacier">
+
+                <img src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=900&q=90"
+                     alt="Expedition Camp">
+
+                <div class="gallery-overlay">
+
+                    <span>08 / EXPEDITIONS</span>
+
+                    <h3>Base Camp Stories</h3>
+
+                    <p>Baltoro Glacier</p>
+
+                    <button class="view-btn">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 09 -->
+
+            <div class="gallery-card"
+                 data-category="peaks"
+                 data-title="Into The Summit"
+                 data-location="Mountain Range">
+
+                <img src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=900&q=90"
+                     alt="Summit">
+
+                <div class="gallery-overlay">
+
+                    <span>09 / PEAKS</span>
+
+                    <h3>Into The Summit</h3>
+
+                    <p>Mountain Range</p>
+
+                    <button class="view-btn">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 10 -->
+
+            <div class="gallery-card wide"
+                 data-category="landscapes"
+                 data-title="The Last Light"
+                 data-location="Northern Peaks">
+
+                <img src="https://images.unsplash.com/photo-1483347756197-71ef80e95f73?auto=format&fit=crop&w=1200&q=90"
+                     alt="Mountain Landscape">
+
+                <div class="gallery-overlay">
+
+                    <span>10 / LANDSCAPES</span>
+
+                    <h3>The Last Light</h3>
+
+                    <p>Northern Peaks</p>
+
+                    <button class="view-btn">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURED ================= -->
+
+<section class="featured-section">
+
+    <div class="container">
+
+        <div class="featured-image">
+
+            <img src="https://images.unsplash.com/photo-1517825738774-7de9363ef735?auto=format&fit=crop&w=1800&q=90"
+                 alt="Alpine Expedition">
+
+            <div class="featured-content">
+
+                <span>FEATURED COLLECTION</span>
+
+                <h2>
+                    THE ART OF<br>
+                    <strong>THE ASCENT</strong>
+                </h2>
+
+                <p>
+                    Mountains are more than destinations.
+                    They are experiences that stay with us forever.
+                </p>
+
+                <a href="#collection" class="featured-btn">
+                    View Collection
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<section class="gallery-stats">
+
+    <div class="container">
+
+        <div class="row text-center">
+
+            <div class="col-md-3 col-6 stat">
+                <h3>250+</h3>
+                <p>EXPEDITIONS</p>
+            </div>
+
+            <div class="col-md-3 col-6 stat">
+                <h3>48</h3>
+                <p>MAJOR PEAKS</p>
+            </div>
+
+            <div class="col-md-3 col-6 stat">
+                <h3>18K+</h3>
+                <p>PHOTOGRAPHS</p>
+            </div>
+
+            <div class="col-md-3 col-6 stat">
+                <h3>25</h3>
+                <p>YEARS OF STORIES</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="gallery-cta">
+
+    <div class="container text-center">
+
+        <span>YOUR NEXT ADVENTURE</span>
+
+        <h2>
+            READY TO WRITE<br>
+            <strong>YOUR STORY?</strong>
+        </h2>
+
+        <a href="">
+            Get In Touch
+            <i class="bi bi-arrow-up-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="main-footer">
+
+    <div class="container">
+
+        <div class="row g-5">
+
+            <div class="col-lg-4">
+
+                <div class="footer-logo">
+
+                    <i class="bi bi-mountains"></i>
+
+                    <div>
+                        <b>Alpine</b>
+                        <small>ASCENTS</small>
+                    </div>
+
+                </div>
+
+                <p>
+                    Exploring mountains, preserving stories and
+                    inspiring the next generation of adventurers.
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-2 col-6">
+
+                <h4>QUICK LINKS</h4>
+
+                <a href="../home.index.html">Home</a>
+                <a href="../ABOUT.PAGE/about.index.html">About</a>
+                <a href="../TECHNIQUES.PAGE/techniques.index.html">Techniques</a>
+                <a href="../RECORDS.PAGE/records.index.html">Records</a>
+
+            </div>
+
+
+            <div class="col-lg-2 col-6">
+
+                <h4>EXPLORE</h4>
+
+                <a href="../STORIES.PAGE/stories.index.html">Stories</a>
+                <a href="../GALLERY.PAGE/gallery.index.html">Gallery</a>
+                <a href="../UPDATES.PAGE/updates.index.html">Updates</a>
+                <a href="../GUIDELINES.PAGE/guidelines.index.html">Guidelines</a>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <h4>CONTACT</h4>
+
+                <p>
+                    <i class="bi bi-geo-alt"></i>
+                    Northern Mountain Region
+                </p>
+
+                <p>
+                    <i class="bi bi-envelope"></i>
+                    info@alpineascents.com
+                </p>
+
+                <p>
+                    <i class="bi bi-telephone"></i>
+                    +92 300 1234567
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Alpine Ascents. All Rights Reserved.
+            </p>
+
+            <p>
+                Built for the love of mountains.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= LIGHTBOX ================= -->
+
+<div class="lightbox" id="lightbox">
+
+    <button class="lightbox-close" id="lightboxClose">
+        <i class="bi bi-x-lg"></i>
+    </button>
+
+    <button class="lightbox-prev" id="lightboxPrev">
+        <i class="bi bi-arrow-left"></i>
+    </button>
+
+    <div class="lightbox-content">
+
+        <img id="lightboxImage" src="" alt="">
+
+        <div class="lightbox-info">
+
+            <span id="lightboxCategory"></span>
+
+            <h2 id="lightboxTitle"></h2>
+
+            <p id="lightboxLocation"></p>
+
+        </div>
+
+    </div>
+
+    <button class="lightbox-next" id="lightboxNext">
+        <i class="bi bi-arrow-right"></i>
+    </button>
+
+</div>
+
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+const galleryCards = document.querySelectorAll(".gallery-card");
+
+filterButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        filterButtons.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        const filter = button.dataset.filter;
+
+        galleryCards.forEach(card => {
+
+            const category = card.dataset.category;
+
+            card.classList.remove("card-show");
+
+            if (filter === "all" || category === filter) {
+
+                card.style.display = "block";
+
+                setTimeout(() => {
+                    card.classList.add("card-show");
+                }, 50);
+
+            } else {
+
+                card.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+});
+
+
+/* ================= LIGHTBOX ================= */
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxTitle = document.getElementById("lightboxTitle");
+const lightboxCategory = document.getElementById("lightboxCategory");
+const lightboxLocation = document.getElementById("lightboxLocation");
+
+const closeBtn = document.getElementById("lightboxClose");
+const nextBtn = document.getElementById("lightboxNext");
+const prevBtn = document.getElementById("lightboxPrev");
+
+let currentIndex = 0;
+
+function getVisibleCards() {
+
+    return Array.from(galleryCards).filter(card => {
+        return card.style.display !== "none";
+    });
+
+}
+
+
+function openLightbox(card) {
+
+    const visibleCards = getVisibleCards();
+
+    currentIndex = visibleCards.indexOf(card);
+
+    showImage();
+
+    lightbox.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+
+}
+
+
+function showImage() {
+
+    const visibleCards = getVisibleCards();
+
+    if (visibleCards.length === 0) return;
+
+    const card = visibleCards[currentIndex];
+
+    const image = card.querySelector("img");
+
+    lightboxImage.src = image.src;
+
+    lightboxTitle.textContent = card.dataset.title;
+
+    lightboxLocation.textContent = card.dataset.location;
+
+    lightboxCategory.textContent =
+        card.dataset.category.toUpperCase();
+
+}
+
+
+galleryCards.forEach(card => {
+
+    card.addEventListener("click", () => {
+
+        openLightbox(card);
+
+    });
+
+});
+
+
+function closeLightbox() {
+
+    lightbox.classList.remove("active");
+
+    document.body.style.overflow = "";
+
+}
+
+
+closeBtn.addEventListener("click", closeLightbox);
+
+
+nextBtn.addEventListener("click", () => {
+
+    const visibleCards = getVisibleCards();
+
+    currentIndex++;
+
+    if (currentIndex >= visibleCards.length) {
+        currentIndex = 0;
+    }
+
+    showImage();
+
+});
+
+
+prevBtn.addEventListener("click", () => {
+
+    const visibleCards = getVisibleCards();
+
+    currentIndex--;
+
+    if (currentIndex < 0) {
+        currentIndex = visibleCards.length - 1;
+    }
+
+    showImage();
+
+});
+
+
+lightbox.addEventListener("click", (e) => {
+
+    if (e.target === lightbox) {
+        closeLightbox();
+    }
+
+});
+
+
+document.addEventListener("keydown", (e) => {
+
+    if (!lightbox.classList.contains("active")) return;
+
+    if (e.key === "Escape") {
+        closeLightbox();
+    }
+
+    if (e.key === "ArrowRight") {
+        nextBtn.click();
+    }
+
+    if (e.key === "ArrowLeft") {
+        prevBtn.click();
+    }
+
+});
+
+</script>
+
+</body>
+</html>

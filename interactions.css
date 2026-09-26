@@ -1,0 +1,188 @@
+/* Shared visual interactions for every page */
+:root {
+    --ui-radius: 18px;
+    --ui-radius-small: 12px;
+    --ui-shadow: 0 14px 30px rgba(7, 27, 48, .14);
+}
+
+/* Curved images with a gentle lift and zoom on hover */
+img {
+    border-radius: var(--ui-radius-small);
+    transition: transform .35s ease, filter .35s ease, box-shadow .35s ease;
+}
+
+img:hover {
+    transform: translateY(-4px) scale(1.025);
+    filter: saturate(1.08);
+    box-shadow: var(--ui-shadow);
+}
+
+/* Keep cover-image containers clean while preserving the rounded picture */
+.gallery-card,
+.explore-card,
+.info-image,
+[class*="image-wrap"],
+[class*="image-box"] {
+    border-radius: var(--ui-radius);
+    overflow: hidden;
+}
+
+/* Curved, tactile buttons and action links */
+button,
+.btn,
+[class*="btn"],
+input[type="submit"],
+input[type="button"] {
+    border-radius: 999px !important;
+    transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease, color .25s ease !important;
+}
+
+button:hover,
+.btn:hover,
+[class*="btn"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(7, 27, 48, .2);
+}
+
+/* Cards and information blocks pop forward when hovered */
+.card,
+[class*="card"],
+[class*="box"] {
+    border-radius: var(--ui-radius) !important;
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease !important;
+}
+
+.card:hover,
+[class*="card"]:hover,
+[class*="box"]:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--ui-shadow);
+}
+
+/* Pop-up entrance for visible content, applied by interactions.js */
+.popup-item {
+    opacity: 0;
+    transform: translateY(22px) scale(.97);
+    transition: opacity .55s ease, transform .55s cubic-bezier(.2, .75, .25, 1);
+}
+
+.popup-item.is-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* This rule follows the entrance state so visible cards retain their hover lift. */
+.popup-item.is-visible:hover {
+    transform: translateY(-7px) scale(1);
+    box-shadow: var(--ui-shadow);
+}
+
+/* Reusable detail pop-up used by card actions across the site */
+.main-nav {
+    left: 0;
+    position: fixed !important;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1100 !important;
+}
+
+body { padding-top: 70px; }
+
+/* Navigation uses orange only for the selected page, not merely on hover. */
+.main-nav .nav-link:hover:not(.active) { color: #dce5eb !important; }
+.main-nav .nav-link { position: relative; }
+.main-nav .nav-link.active {
+    color: #ff7800 !important;
+    text-decoration-color: #ff7800 !important;
+    text-decoration-line: underline !important;
+    text-decoration-thickness: 2px !important;
+    text-underline-offset: 8px;
+}
+.main-nav .nav-link.active::after {
+    display: none !important;
+}
+
+.content-modal .modal-content {
+    border: 0;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 22px 60px rgba(0, 0, 0, .3);
+}
+
+/* A richer treatment for the technique detail windows. */
+.content-modal.technique-modal .modal-content {
+    background: #071b30;
+    border: 1px solid rgba(255, 120, 0, .55);
+    color: #fff;
+}
+.content-modal.technique-modal .modal-body { padding: 30px; }
+.content-modal-technique-label { color: #ff7800; font-size: 10px; font-weight: 700; letter-spacing: 2px; }
+.content-modal.technique-modal h2 { color: #fff; margin-top: 8px; }
+.content-modal.technique-modal p { color: #c3d0d9; }
+.content-modal.technique-modal .content-modal-image { height: 185px; filter: saturate(.8) contrast(1.08); }
+
+.content-modal-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.content-modal .modal-body { padding: 28px 30px 30px; }
+.content-modal h2 { color: #071b30; font-size: 26px; font-weight: 700; }
+.content-modal p { color: #657381; font-size: 14px; line-height: 1.8; margin: 12px 0 0; }
+.content-modal .btn-close {
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .18);
+    opacity: 1;
+    padding: 10px;
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    z-index: 1;
+}
+
+/* Shared footer — matches the footer on the home page */
+.footer {
+    background: #06182b;
+    border-top: 3px solid #ff7800;
+    color: #fff;
+    padding: 55px 0 0;
+}
+.footer-logo { align-items: center; display: flex; gap: 9px; margin-bottom: 15px; }
+.footer-logo > i { color: #ff7800; font-size: 30px; }
+.footer-logo b, .footer-logo small { display: block; letter-spacing: 2px; }
+.footer-logo b { font-size: 15px; }
+.footer-logo small { color: #9cabb8; font-size: 7px; }
+.footer p { color: #aebbc6; font-size: 11px; line-height: 1.8; max-width: 300px; }
+.footer h5 { font-size: 13px; margin-bottom: 18px; }
+.footer h5::after { background: #ff7800; content: ""; display: block; height: 2px; margin-top: 7px; width: 25px; }
+.footer-links { list-style: none; padding: 0; }
+.footer-links li { margin-bottom: 9px; }
+.footer-links a, .contact-item { color: #aebbc6; font-size: 10px; }
+.footer-links a:hover { color: #ff7800; padding-left: 4px; }
+.social-icons { display: flex; gap: 8px; margin-top: 18px; }
+.social-icons a { align-items: center; border: 1px solid #3b4d5e; border-radius: 10px; color: #fff; display: flex; height: 34px; justify-content: center; width: 34px; }
+.social-icons a:hover { background: #ff7800; border-color: #ff7800; color: #fff; }
+.contact-item { align-items: center; display: flex; gap: 10px; margin-bottom: 14px; }
+.contact-item i { color: #ff7800; font-size: 16px; }
+.footer-bottom { border-top: 1px solid #26394a; color: #81919f; display: flex; font-size: 9px; justify-content: space-between; margin-top: 40px; padding: 18px 0; }
+@media (max-width: 767px) { .footer-bottom { flex-direction: column; gap: 8px; text-align: center; } }
+
+@media (max-width: 991px) {
+    .main-nav .navbar-collapse { max-height: calc(100vh - 70px); overflow-y: auto; }
+    .main-nav .nav-link.active { text-underline-offset: 5px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+    }
+
+    .popup-item { opacity: 1; transform: none; }
+}

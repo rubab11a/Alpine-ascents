@@ -1,0 +1,737 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b1117;
+    color: #fff;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title span {
+    color: #f28c28;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.section-title h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.section-title h2 b {
+    color: #f28c28;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.main-nav {
+    background: #071b30;
+    min-height: 70px;
+    border-bottom: 1px solid #20364a;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    font-size: 35px;
+    color: #ff7800;
+}
+
+.logo span {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo b {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.logo small {
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: #ff7800;
+    margin-top: 5px;
+}
+
+.navbar-nav {
+    gap: 15px;
+}
+
+.nav-link {
+    color: #dce5eb !important;
+    font-size: 12px;
+    padding: 25px 13px;
+    transition: .3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ff7800 !important;
+}
+
+.visitors {
+    color: #ddd;
+    font-size: 14px;
+}
+
+.visitors i {
+    color: #ff7800;
+    margin-right: 5px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.shelter-hero {
+    min-height: 80vh;
+    background: url("https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.shelter-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(4, 10, 16, 0.9),
+        rgba(4, 10, 16, 0.45),
+        rgba(4, 10, 16, 0.65)
+    );
+}
+
+.shelter-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 750px;
+    padding: 80px 7%;
+}
+
+.shelter-hero-content span {
+    color: #f28c28;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.shelter-hero-content h1 {
+    font-size: 65px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 18px 0;
+}
+
+.shelter-hero-content h1 b {
+    color: #f28c28;
+}
+
+.shelter-hero-content p {
+    color: #ddd;
+    font-size: 17px;
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.orange-btn {
+    display: inline-block;
+    background: #f28c28;
+    color: #fff;
+    padding: 13px 30px;
+    border-radius: 4px;
+    font-weight: 700;
+    transition: 0.3s;
+    border: 2px solid #f28c28;
+}
+
+.orange-btn:hover {
+    background: transparent;
+    color: #f28c28;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    background: #101820;
+}
+
+.intro-img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.intro-content {
+    padding: 20px 15px 20px 35px;
+}
+
+.intro-content h3 {
+    font-size: 38px;
+    margin: 12px 0 20px;
+}
+
+.intro-content h3 b {
+    color: #f28c28;
+}
+
+.intro-content p {
+    color: #aaa;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.check-list {
+    list-style: none;
+    padding: 0;
+}
+
+.check-list li {
+    margin-bottom: 12px;
+    color: #ddd;
+}
+
+.check-list i {
+    color: #f28c28;
+    margin-right: 10px;
+}
+
+
+/* =========================
+   SHELTER TYPES
+========================= */
+
+.shelters {
+    background: #0b1117;
+}
+
+.shelter-card {
+    background: #121c25;
+    padding: 35px 25px;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 8px;
+    height: 100%;
+    transition: 0.35s;
+    text-align: center;
+}
+
+.shelter-card:hover {
+    transform: translateY(-10px);
+    border-color: #f28c28;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.card-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: rgba(242,140,40,0.12);
+    color: #f28c28;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.shelter-card h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.shelter-card p {
+    color: #999;
+    font-size: 15px;
+}
+
+
+/* =========================
+   CAMPING
+========================= */
+
+.camping {
+    background: #101820;
+}
+
+.camping-img {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.camping h3 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.camping h3 b {
+    color: #f28c28;
+}
+
+.camping p {
+    color: #aaa;
+}
+
+.camp-points {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.camp-points li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+    color: #ddd;
+}
+
+.camp-points i {
+    color: #f28c28;
+    font-size: 20px;
+}
+
+
+/* =========================
+   SHELTER RECORDS
+========================= */
+
+.shelter-records {
+    background: #0b1117;
+}
+
+.record-box {
+    background: #121c25;
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.06);
+    transition: 0.3s;
+}
+
+.record-box:hover {
+    transform: translateY(-7px);
+    border-color: #f28c28;
+}
+
+.record-box i {
+    color: #f28c28;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.record-box h3 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.record-box p {
+    color: #999;
+    margin: 0;
+}
+
+
+/* =========================
+   GUIDELINES
+========================= */
+
+.shelter-guidelines {
+    background: #101820;
+}
+
+.guideline {
+    background: #121c25;
+    padding: 28px;
+    border-left: 4px solid #f28c28;
+    border-radius: 5px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.guideline:hover {
+    transform: translateY(-5px);
+    background: #17232d;
+}
+
+.guideline i {
+    color: #f28c28;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.guideline h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.guideline p {
+    color: #999;
+    margin: 0;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.shelter-cta {
+    padding: 100px 20px;
+    text-align: center;
+    background:
+        linear-gradient(
+            rgba(5,12,18,0.82),
+            rgba(5,12,18,0.82)
+        ),
+        url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+}
+
+.shelter-cta h2 {
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.shelter-cta h2 b {
+    color: #f28c28;
+}
+
+.shelter-cta p {
+    color: #ccc;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #070c11;
+    padding: 70px 0 0;
+    color: #aaa;
+}
+
+.footer-logo {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.footer-logo i {
+    color: #f28c28;
+    margin-right: 8px;
+}
+
+.footer p {
+    color: #888;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #333;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #f28c28;
+    border-color: #f28c28;
+    color: #fff;
+}
+
+.footer h5 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #888;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f28c28;
+    padding-left: 5px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+    color: #888;
+}
+
+.contact-item i {
+    color: #f28c28;
+    font-size: 18px;
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE - 992px
+========================= */
+
+@media (max-width: 992px) {
+
+    .main-nav {
+        padding: 15px 4%;
+    }
+
+    .main-nav .nav-link {
+        margin: 5px 0;
+    }
+
+    .visitors {
+        margin-top: 10px;
+    }
+
+    .shelter-hero {
+        min-height: 70vh;
+    }
+
+    .shelter-hero-content {
+        padding: 70px 6%;
+    }
+
+    .shelter-hero-content h1 {
+        font-size: 52px;
+    }
+
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    .intro-content {
+        padding: 30px 0 0;
+    }
+
+    .camping-img {
+        height: 400px;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* =========================
+   RESPONSIVE - 768px
+========================= */
+
+@media (max-width: 768px) {
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+        font-size: 34px;
+    }
+
+    .shelter-hero {
+        min-height: 65vh;
+    }
+
+    .shelter-hero-content {
+        padding: 60px 7%;
+    }
+
+    .shelter-hero-content h1 {
+        font-size: 43px;
+    }
+
+    .shelter-hero-content p {
+        font-size: 15px;
+    }
+
+    .intro-img {
+        height: 350px;
+    }
+
+    .intro-content h3,
+    .camping h3 {
+        font-size: 32px;
+    }
+
+    .camping-img {
+        height: 350px;
+    }
+
+    .shelter-cta h2 {
+        font-size: 35px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .contact-item {
+        justify-content: center;
+    }
+}
+
+
+/* =========================
+   RESPONSIVE - 576px
+========================= */
+
+@media (max-width: 576px) {
+
+    .section-padding {
+        padding: 55px 0;
+    }
+
+    .section-title span {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .section-title h2 {
+        font-size: 29px;
+    }
+
+    .shelter-hero {
+        min-height: 75vh;
+    }
+
+    .shelter-hero-content {
+        padding: 50px 6%;
+    }
+
+    .shelter-hero-content span {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .shelter-hero-content h1 {
+        font-size: 36px;
+    }
+
+    .shelter-hero-content p {
+        font-size: 14px;
+    }
+
+    .orange-btn {
+        padding: 11px 22px;
+        font-size: 14px;
+    }
+
+    .intro-img,
+    .camping-img {
+        height: 280px;
+    }
+
+    .intro-content h3,
+    .camping h3 {
+        font-size: 28px;
+    }
+
+    .shelter-card {
+        padding: 28px 20px;
+    }
+
+    .record-box {
+        padding: 28px 15px;
+    }
+
+    .record-box h3 {
+        font-size: 32px;
+    }
+
+    .shelter-cta {
+        padding: 70px 20px;
+    }
+
+    .shelter-cta h2 {
+        font-size: 30px;
+    }
+
+    .footer {
+        padding-top: 50px;
+    }
+}
